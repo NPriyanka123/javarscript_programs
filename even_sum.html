@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Of Even Nmubers</title>
+</head>
+<body>
+    <!-- Write a JavaScript program to print sum of even numbers from given array 
+      write a js program to print sum of even numbers in array without using cobtrol statements -->
+    <script>
+        let arr=[5,12,77,82,90,45];
+        let newarr=arr.filter((a)=>a%2==0).reduce((a,b)=>a+b);
+        document.write(newarr+"<br>");
+
+
+    //using for loop
+    let sum=0;
+    for(let a of arr){
+        if(a%2==0)
+        sum+=a
+    }
+    document.write(sum+"<br>");
+
+    //find the index of a first even 
+    document.write(arr.findIndex((a)=>a%2==0))
+    </script>
+</body>
+</html>

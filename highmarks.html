@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Write a JavaScript program to print student details who got highest marks, create objects using class  -->
+    <script>
+        function students(name,standard,marks){
+            this.name=name;
+            this.standard=standard;
+            this.marks=marks;
+        }
+        let student1=new students("Priya",9,90);
+        let student2=new students("Chinnu",9,95);
+        let student3=new students("sunny",9,80);
+        let student4=new students("chintu",9,70);
+        let student5=new students("Priya",9,98);
+        let studentMarks=[student1,student2,student3,student4,student5];
+
+
+        let highMarks=studentMarks.filter((m)=>m.marks>90);
+        for(let a of highMarks){
+            for(let key in a){
+                document.write(key+"="+a[key]+"<br>");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>

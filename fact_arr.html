@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial of array</title>
+</head>
+<body>
+    <!-- write a javascript program to store factorials of each number into new array from given array -->
+    <script>
+        let arr=[1,2,3,4,5];
+        document.write(arr+"<br>");
+        let newarr=arr.map((a)=>{let fact=1;
+            for(let i=2;i<=a;i++){
+                fact*=i;
+            }
+            return fact;
+        });
+        
+        document.write(newarr);
+    </script>
+</body>
+</html>

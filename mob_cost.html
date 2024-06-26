@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- write a program to print mobile name whose cost is greater than 30000 -->
+     <script>
+        function mobile(name,company,processor,cost){
+            this.name=name;
+            this.company=company;
+            this.processor=processor;
+            this.cost=cost;
+        }
+        let mobile1=new mobile("realmex2","Realme","Android",25000);
+        let mobile2=new mobile("realme9","Realme","Android",18000);
+        let mobile3=new mobile("iphone","Apple","ios",250000);
+        let mobile4=new mobile("galaxy","Samsung","Android",35000);
+        let mobile5=new mobile("onepluspro9","Oneplus","Android",45000);
+        let newmobiles=[mobile1,mobile2,mobile3,mobile4,mobile5];
+        for(let m of newmobiles){
+            if(m.cost>30000){
+                for(let key in m){
+                    document.write(key+"="+m[key]+"<br>");
+                }
+            }    
+            document.write("<br>");
+        }
+
+       
+
+        document.write(newarr);
+     </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Number</title>
+</head>
+<body>
+    <!-- write a javascript program to check given number is perfect number or not -->
+
+    <script>
+        var num1=parseInt(prompt("Enter the number"));
+        var sum=0;
+        for(var i=1;i<=num1-1;i++){
+            if(num1%i==0){
+                sum+=i;
+            }
+        }
+        if (sum==num1){
+            document.write("Given number is perfect number");
+        }
+        else{
+            document.write("Given number is not a perfect number");
+        }
+    </script>
+</body>
+</html>

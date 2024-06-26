@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in javascript</title>
+</head>
+<body>
+    <script>
+        //simple function without parameters
+        function hello(){
+            document.write("Hello World! <br>");
+        }
+        hello();
+
+        //Function with parameters
+        let a=prompt("Enter a");
+        let b=prompt("Enter b");
+        add(a,b);
+        function add(x,y){
+            document.write(x+y +"<br>");
+        }
+
+        //Function with parameters and return type
+        let num1=parseInt(prompt("Enter a number"));
+        let num2=parseInt(prompt("Enter a number"));
+        function sum(x,y){
+            return x+y;
+        }
+        document.write(sum(num1,num2));
+    </script>
+</body>
+</html>

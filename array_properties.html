@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and its properties</title>
+</head>
+<body>
+    <script>
+        let arr=["Priya","Chinni","Varshi","Ammu"]
+        document.write(arr+"<br>");//print all elements in the array
+
+
+        //to read particular element based on index
+        document.write(arr[3]+"<br>");
+
+
+        //to read elements in a array using for loop
+        for(let i=0;i<arr.length;i++){
+            document.write(arr[i]+"<br>")
+        }
+
+
+        //read elements using for of 
+        for(let a of arr){
+            document.write(a+"<br>")
+        }
+
+
+        //push method in array-to add element at the end
+        arr.push("Chinnu");
+        document.write(arr+"<br>");
+
+
+        //pop methos-to del element at the end
+        arr.pop(); //chinnu element is remove here
+        
+
+        //shift method-remove element at the end
+        arr.shift(); //priya is removed
+
+
+        //unshift method-add element at the starting
+        arr.unshift("Priyanka");
+        document.write(arr+"<br>");
+
+
+        //splice method-add r del elements at any position
+        arr.splice(1,2,"Sweety","Lovely");
+        document.write(arr+"<br>");
+
+
+        //delete method-it del only the value index remains same
+        //delete arr[2];
+        //document.write(arr+"<br>");
+
+
+        //slice -to create subarray
+        document.write(arr.slice(1,3)+"<br>");
+
+
+        //concat method -to add 2 arrays
+        let numbers=[1,2,8,3,4];
+        let newArr=arr.concat(numbers);
+        document.write(newArr+"<br>")
+
+
+
+
+    </script>
+</body>
+</html>

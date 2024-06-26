@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting of an Array</title>
+</head>
+<body>
+    <script>
+        //sorting of a string
+        let arr1=["Ironman","Thor","Hulk","Batman"];
+        let myfav=arr1.sort();
+        document.write(myfav+"<br>");
+        myfav=arr1.sort().reverse();
+        document.write(myfav+"<br>");
+ 
+
+        //sorting of a array
+        let arr2=[1,2,33,88,4,15,8]
+        myfav=arr2.sort();
+        document.write(myfav+"<br>");
+        myfav=arr2.sort(function(a,b){return a-b});
+        document.write(myfav+"<br>");
+    </script>
+</body>
+</html>

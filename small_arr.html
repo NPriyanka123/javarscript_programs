@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smallest number in array</title>
+</head>
+<body>
+    <script>
+        let arr=[22,31,77,56,44];
+        let small=arr[0];
+        for(let a of arr){
+            if(a<small){
+                small=a;
+            }
+        }
+        document.write(small+"<br>");
+        let large=arr[0];
+        for(let a of arr){
+            if(a>large){
+                large=a;
+            }
+        }
+        document.write(large+"<br>");
+    </script>
+</body>
+</html>

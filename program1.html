@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- In certain programming language 687 is coded as "SES" and 96 coded as "NS"
+      write a program to print a code for the given number -->
+     <script>
+        let num1=prompt("Enter five digit number");
+        let code=prompt("Enter a code");
+        let sum="";
+        while(num1>0){
+            let remainder=num1%10;
+            num1=parseInt(num1/10);
+            if (remainder==0){
+                sum="Z"+sum;
+            }
+            else if(remainder==1){
+                sum="O"+sum;
+            }
+            else if(remainder==2 || remainder==3){
+                sum="T"+sum;
+            }
+            else if(remainder==4 || remainder==5){
+                sum="F"+sum;
+            }
+            else if(remainder==6 || remainder==7){
+                sum="S"+sum;
+            }
+            else if(remainder==8){
+                sum="E"+sum;
+            }
+            else{
+                sum="N"+sum;
+            }
+        }
+        //document.write(sum);
+        if(sum==code){
+            document.write("Authentication is success");
+        }
+        else{
+            document.write("Authentication is not success");
+        }
+     </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reversing a Number</title>
+</head>
+<body>
+    <script>
+        let num1=prompt("Enter a number");
+        //let result=0;
+        let result="";
+        while(num1>0){
+            let remainder=num1%10;
+            //result=result*10+remainder;
+            result+=remainder;
+            num1=parseInt(num1/10);
+        }
+        document.write(result);
+    </script>
+</body>
+</html>

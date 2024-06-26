@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number</title>
+</head>
+<body>
+    <!-- Write a program to check whether the given number number is Armstrong number or not -->
+     <script>
+        let num1=prompt("Enter a number");
+        let temp1=num1;
+        let result=0;
+        let count=0;
+        while(temp1>0){
+            count++;
+            temp1=parseInt(temp1/10);
+        }
+        temp1=num1;
+        while(temp1>0){
+            let remainder=temp1%10;
+            result+=remainder**count;
+            temp1=parseInt(temp1/10);
+        }
+        if(result==num1){
+            document.write(`${num1} is armstrong number`);
+        }
+        else{
+            document.write(`${num1} is not a armstrong number`);
+        }
+     </script>
+</body>
+</html>

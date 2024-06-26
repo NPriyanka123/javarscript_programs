@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Methods of array</title>
+</head>
+<body>
+    <script>
+        //forEach method
+        let arr=[1,2,3,4,5,6];
+        document.write(arr+"<br>");
+        function multiplyWithTwo(a){
+            document.write(a*2+"<br>");
+        }
+        arr.forEach(multiplyWithTwo);
+
+        //arrow function
+       let multiplyWithThree = (a) => {document.write(a*3+"&nbsp");}
+       arr.forEach(multiplyWithThree);
+       document.write("<br>");
+
+        //map
+       // function multiplyWithThree(a){
+          //  return a*3}
+        let newArr=arr.map(multiplyWithThree);
+        //document.write(newArr);
+        document.write("<br>");
+
+        //filter
+        let arr1=[5,8,7,10,15,12];
+        function evenNumbers(a){
+            if (a%2==0)
+            return a;
+        }
+        let newARR=arr.filter(evenNumbers);
+        document.write(newARR);
+        document.write("<br>");
+
+
+        
+        //Reduce function-commulative value of an array
+        let arr2=[1,2,3,4,5,6,7,8,9,10];
+        let new_arr=arr2.reduce((a,b)=>a+b);
+        document.write(new_arr);
+        document.write("<br>");
+
+
+        
+        //findIndex
+        let new_arr1=arr2.findIndex((a)=>a>4);
+        document.write(new_arr1);
+
+
+    </script>
+</body>
+</html>
